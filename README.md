@@ -56,6 +56,18 @@ I specialize in **Shopify Online Store 2.0 (OS 2.0)** theme development from scr
 
 ---
 
+## 🏆 Why Upwork Clients & E-Commerce Agencies Hire Me
+
+When Shopify merchants and agencies work with me, they get high-converting code, zero technical debt, and revenue-focused engineering:
+
+- ⚡ **Core Web Vitals 90+ Guaranteed:** Mobile-first Liquid, native image loading, and JS bundle deferral for sub-second speeds.
+- 🎨 **Figma to Pixel-Perfect Shopify Liquid:** Flawless conversion of design files into dynamic OS 2.0 sections with custom JSON schemas.
+- 🛒 **Higher Conversion Rates (CRO):** Custom AJAX cart drawers, sticky add-to-cart bars, and dynamic free shipping progress indicators (+38% Add-to-Cart boost).
+- 🔌 **Seamless App & API Integrations:** Klaviyo event tracking, Recharge subscriptions, Yotpo/Judge.me reviews, and custom Webhooks.
+- 🤝 **Client-First Communication:** Daily async video/commit updates, 100% on-time delivery, and 14-day post-launch warranty.
+
+---
+
 ## 🛍️ Shopify Partner Credential & Expertise
 
 ```gcode
