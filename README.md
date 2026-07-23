@@ -143,31 +143,31 @@ When Shopify merchants and agencies work with me, they get high-converting code,
 
 ## 📊 GitHub Stats & Contribution Analytics
 
-<div align="center">
+<p align="center">
   <a href="https://github.com/SayanRO16">
-    <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=SayanRO16&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Sayanthan's GitHub Stats" height="165" />
+    <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=SayanRO16&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="Sayanthan's GitHub Stats" height="185" />
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/SayanRO16">
-    <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=SayanRO16&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="165" />
+    <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=SayanRO16&theme=tokyonight&hide_border=true&langs_count=5" alt="Top Languages" height="185" />
   </a>
-</div>
+</p>
 
 <br/>
 
-<div align="center">
+<p align="center">
   <a href="https://github.com/SayanRO16">
-    <img src="https://streak-stats.demolab.com/?user=SayanRO16&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" width="85%" />
+    <img src="https://streak-stats.demolab.com/?user=SayanRO16&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" width="80%" />
   </a>
-</div>
+</p>
 
 <br/>
 
-<div align="center">
+<p align="center">
   <a href="https://github.com/SayanRO16">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=SayanRO16&theme=tokyonight&hide_border=true" alt="GitHub Activity Graph" width="85%" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=SayanRO16&theme=tokyonight&hide_border=true" alt="GitHub Activity Graph" width="80%" />
   </a>
-</div>
+</p>
 
 ---
 
