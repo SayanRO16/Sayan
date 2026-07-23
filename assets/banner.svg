@@ -24,124 +24,102 @@
     </filter>
   </defs>
 
-  <!-- Card Outer Frame -->
   <rect width="1200" height="400" rx="16" fill="url(#bgGrad)"/>
 
   <!-- Decorative Ambient Glow Circles -->
   <circle cx="1100" cy="80" r="180" fill="#95BF47" opacity="0.12" filter="url(#glow)" />
   <circle cx="100" cy="350" r="150" fill="#06B6D4" opacity="0.1" filter="url(#glow)" />
 
-  <!-- Grid Pattern Overlay -->
+  <!-- Grid Patterns -->
   <g opacity="0.05" stroke="#FFFFFF" stroke-width="1">
     <path d="M0 50H1200 M0 100H1200 M0 150H1200 M0 200H1200 M0 250H1200 M0 300H1200 M0 350H1200" />
     <path d="M150 0V400 M300 0V400 M450 0V400 M600 0V400 M750 0V400 M900 0V400 M1050 0V400" />
   </g>
 
-  <!-- Left Content Area -->
+  <!-- Left Side Text Content -->
   
-  <!-- 1. Top Badge Pill (Shopify Partner) -->
+  <!-- Top Tag Line (Certified Shopify Partner) with expanded pill & vector icon -->
   <g transform="translate(70, 52)">
-    <rect x="0" y="0" width="280" height="34" rx="17" fill="#95BF47" fill-opacity="0.15" stroke="#95BF47" stroke-width="1.5"/>
+    <rect x="0" y="0" width="295" height="34" rx="17" fill="#95BF47" fill-opacity="0.15" stroke="#95BF47" stroke-width="1.5"/>
     
-    <!-- Vector Shopping Bag Icon -->
-    <path d="M18 11V14H16V11H18ZM14 11V14H12V11H14ZM20 11V21C20 21.55 19.55 22 19 22H11C10.45 22 10 21.55 10 21V11C10 10.45 10.45 10 11 10H13V9C13 7.9 13.9 7 15 7C16.1 7 17 7.9 17 9V10H19C19.55 10 20 10.45 20 11Z" fill="#95BF47" transform="translate(4, 0)"/>
+    <!-- Vector Checkmark Badge Icon -->
+    <circle cx="20" cy="17" r="8" fill="#95BF47" />
+    <path d="M16 17L19 20L24 14" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     
-    <text x="38" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#95BF47" letter-spacing="0.5">
+    <text x="36" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#95BF47" letter-spacing="0.8">
       CERTIFIED SHOPIFY PARTNER
     </text>
   </g>
 
-  <!-- 2. Main Name Title -->
-  <text x="70" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="50" font-weight="900" fill="#FFFFFF" letter-spacing="-1">
+  <!-- Main Name Title -->
+  <text x="70" y="145" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="900" fill="#FFFFFF" letter-spacing="-1">
     SAYANTHAN S.
   </text>
 
-  <!-- 3. Subtitle -->
-  <text x="70" y="182" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#38BDF8">
+  <!-- Subtitle -->
+  <text x="70" y="185" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#38BDF8">
     Senior Shopify Developer &amp; Liquid Specialist
   </text>
 
-  <!-- 4. Metadata Line -->
-  <text x="70" y="212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#94A3B8">
+  <text x="70" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400" fill="#94A3B8">
     5+ Years Experience • Sri Lanka • Core Web Vitals 90+ • High-Converting OS 2.0 Themes
   </text>
 
-  <!-- 5. Skill Badges Row -->
-  <g transform="translate(70, 242)">
+  <!-- Pill Skill Badges -->
+  <g transform="translate(70, 245)">
     <!-- Badge 1 -->
-    <rect x="0" y="0" width="120" height="32" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-    <text x="18" y="20" font-family="sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Shopify Plus</text>
+    <rect x="0" y="0" width="130" height="34" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="15" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#E2E8F0">Shopify Plus</text>
 
     <!-- Badge 2 -->
-    <rect x="130" y="0" width="135" height="32" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-    <text x="145" y="20" font-family="sans-serif" font-size="12" font-weight="600" fill="#95BF47">Custom Liquid</text>
+    <rect x="142" y="0" width="145" height="34" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="157" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#95BF47">Custom Liquid</text>
 
     <!-- Badge 3 -->
-    <rect x="275" y="0" width="145" height="32" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-    <text x="290" y="20" font-family="sans-serif" font-size="12" font-weight="600" fill="#38BDF8">JavaScript (ES6+)</text>
+    <rect x="299" y="0" width="155" height="34" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="314" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#38BDF8">JavaScript (ES6+)</text>
 
     <!-- Badge 4 -->
-    <rect x="430" y="0" width="155" height="32" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-    <text x="445" y="20" font-family="sans-serif" font-size="12" font-weight="600" fill="#F43F5E">Speed Optimization</text>
+    <rect x="466" y="0" width="165" height="34" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="481" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#F43F5E">Speed Optimization</text>
   </g>
 
-  <!-- 6. Bottom CTA Row -->
-  <g transform="translate(70, 312)">
+  <!-- Bottom CTA Row -->
+  <g transform="translate(70, 315)">
     <!-- Upwork Button -->
-    <rect x="0" y="0" width="200" height="42" rx="8" fill="url(#accentUpwork)"/>
-    <text x="24" y="26" font-family="sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">Available on Upwork 🚀</text>
+    <rect x="0" y="0" width="220" height="44" rx="10" fill="url(#accentUpwork)"/>
+    <text x="32" y="27" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Available on Upwork</text>
+    <path d="M185 18L195 22L185 26" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 
     <!-- Contact Info -->
-    <text x="220" y="25" font-family="sans-serif" font-size="14" font-weight="500" fill="#CBD5E1">
-      ✉️ Open for Custom Shopify Projects &amp; Retainers
-    </text>
+    <g transform="translate(245, 14)">
+      <path d="M0 3L10 10L20 3M0 3H20V15H0V3Z" stroke="#CBD5E1" stroke-width="1.5" stroke-linejoin="round"/>
+      <text x="28" y="13" font-family="system-ui, sans-serif" font-size="14" font-weight="500" fill="#CBD5E1">
+        Open for Custom Shopify Projects &amp; Retainers
+      </text>
+    </g>
   </g>
 
   <!-- Right Side Code Window Illustration -->
-  <g transform="translate(740, 52)">
+  <g transform="translate(760, 55)">
     <!-- Window Frame -->
-    <rect width="390" height="295" rx="12" fill="#090D16" stroke="#334155" stroke-width="1.5"/>
+    <rect width="370" height="290" rx="12" fill="#090D16" stroke="#334155" stroke-width="1.5"/>
     
-    <!-- Top Window Bar & Controls -->
-    <circle cx="20" cy="20" r="5.5" fill="#EF4444" />
-    <circle cx="36" cy="20" r="5.5" fill="#F59E0B" />
-    <circle cx="52" cy="20" r="5.5" fill="#10B981" />
-    <text x="145" y="24" font-family="'Fira Code', Consolas, Monaco, monospace" font-size="12" fill="#64748B">shopify-theme.liquid</text>
-    <line x1="0" y1="38" x2="390" y2="38" stroke="#1E293B" stroke-width="1"/>
+    <!-- Top Window Dots -->
+    <circle cx="20" cy="20" r="6" fill="#EF4444" />
+    <circle cx="38" cy="20" r="6" fill="#F59E0B" />
+    <circle cx="56" cy="20" r="6" fill="#10B981" />
+    <text x="140" y="24" font-family="monospace" font-size="12" fill="#64748B">shopify-theme.liquid</text>
+    <line x1="0" y1="38" x2="370" y2="38" stroke="#1E293B" stroke-width="1"/>
 
-    <!-- Code Snippet Lines using Valid SVG tspan -->
-    <text x="20" y="70" font-family="'Fira Code', Consolas, Monaco, monospace" font-size="13" fill="#F43F5E">
-      {% assign <tspan fill="#CBD5E1">store_speed = </tspan><tspan fill="#95BF47">98</tspan> %}
-    </text>
-    
-    <text x="20" y="98" font-family="'Fira Code', Consolas, Monaco, monospace" font-size="13" fill="#F43F5E">
-      {% if <tspan fill="#CBD5E1">merchant.goal == </tspan><tspan fill="#38BDF8">'High Sales'</tspan> %}
-    </text>
-    
-    <text x="40" y="126" font-family="'Fira Code', Consolas, Monaco, monospace" font-size="13" fill="#64748B">
-      &lt;!-- OS 2.0 AJAX Cart Drawer Engine --&gt;
-    </text>
-    
-    <text x="40" y="154" font-family="'Fira Code', Consolas, Monaco, monospace" font-size="13" fill="#38BDF8">
-      &lt;div <tspan fill="#95BF47">class=</tspan><tspan fill="#F59E0B">"sticky-cart-drawer"</tspan>&gt;
-    </text>
-    
-    <text x="60" y="182" font-family="'Fira Code', Consolas, Monaco, monospace" font-size="13" fill="#CBD5E1">
-      {% render <tspan fill="#F43F5E">'custom-upsell-grid'</tspan> %}
-    </text>
-    
-    <text x="40" y="210" font-family="'Fira Code', Consolas, Monaco, monospace" font-size="13" fill="#38BDF8">
-      &lt;/div&gt;
-    </text>
-    
-    <text x="20" y="238" font-family="'Fira Code', Consolas, Monaco, monospace" font-size="13" fill="#F43F5E">
-      {% endif %}
-    </text>
-    
-    <line x1="20" y1="255" x2="370" y2="255" stroke="#1E293B" stroke-width="1"/>
-
-    <text x="20" y="278" font-family="'Fira Code', Consolas, Monaco, monospace" font-size="13" font-weight="700" fill="#10B981">
-      ✓ Core Web Vitals 90+ Verified
-    </text>
+    <!-- Code Snippet Lines -->
+    <text x="20" y="70" font-family="monospace" font-size="13" fill="#F43F5E">{% assign <t fill="#CBD5E1">store_speed = </t><t fill="#95BF47">98</t> %}</text>
+    <text x="20" y="98" font-family="monospace" font-size="13" fill="#F43F5E">{% if <t fill="#CBD5E1">merchant.goal == </t><t fill="#38BDF8">'High Sales'</t> %}</text>
+    <text x="40" y="126" font-family="monospace" font-size="13" fill="#64748B">&lt;!-- OS 2.0 AJAX Cart Drawer Engine --&gt;</text>
+    <text x="40" y="154" font-family="monospace" font-size="13" fill="#38BDF8">&lt;div <t fill="#95BF47">class=</t><t fill="#F59E0B">"sticky-cart-drawer"</t>&gt;</text>
+    <text x="60" y="182" font-family="monospace" font-size="13" fill="#CBD5E1">{% render <t fill="#F43F5E">'custom-upsell-grid'</t> %}</text>
+    <text x="40" y="210" font-family="monospace" font-size="13" fill="#38BDF8">&lt;/div&gt;</text>
+    <text x="20" y="238" font-family="monospace" font-size="13" fill="#F43F5E">{% endif %}</text>
+    <text x="20" y="268" font-family="monospace" font-size="13" fill="#10B981">✓ Core Web Vitals 90+ Verified</text>
   </g>
 </svg>
