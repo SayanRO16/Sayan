@@ -1,0 +1,17 @@
+{% comment %}
+  Snippet: Estimated Delivery Date Calculator
+  Author: Sayanthan S.
+{% endcomment %}
+
+{% assign min = min_days | default: 3 %}
+{% assign max = max_days | default: 6 %}
+{% assign min_seconds = min | times: 86400 %}
+{% assign max_seconds = max | times: 86400 %}
+
+{% assign delivery_start = 'now' | date: '%s' | plus: min_seconds | date: '%b %d' %}
+{% assign delivery_end = 'now' | date: '%s' | plus: max_seconds | date: '%b %d' %}
+
+<div class="delivery-estimate-badge" style="display:flex; align-items:center; gap:8px; font-size:14px; color:#1e293b;">
+  <span>🚚</span>
+  <span>Estimated Delivery: <strong>{{ delivery_start }} - {{ delivery_end }}</strong></span>
+</div>

@@ -1,0 +1,82 @@
+{% comment %}
+  Section: Master AJAX Cart Drawer Engine with Free Shipping Bar
+  Author: Sayanthan S. (Certified Shopify Partner)
+{% endcomment %}
+
+<div id="CartDrawer" class="cart-drawer" data-free-shipping-threshold="{{ section.settings.free_shipping_threshold | default: 100 }}">
+  <div class="cart-drawer-overlay"></div>
+  <div class="cart-drawer-inner">
+    
+    <!-- Drawer Header -->
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">Your Cart ({{ cart.item_count }})</h3>
+      <button type="button" class="cart-drawer-close" aria-label="Close Cart">&times;</button>
+    </div>
+
+    <!-- Free Shipping Progress Bar -->
+    {% assign threshold_cents = section.settings.free_shipping_threshold | times: 100 %}
+    {% assign cart_total = cart.total_price %}
+    
+    <div class="free-shipping-bar">
+      {% if cart_total >= threshold_cents %}
+        <p class="free-shipping-msg success">🎉 Congratulations! You unlocked FREE Shipping!</p>
+        <div class="progress-bar-track"><div class="progress-bar-fill" style="width: 100%;"></div></div>
+      {% else %}
+        {% assign remaining = threshold_cents | minus: cart_total %}
+        <p class="free-shipping-msg">Add <strong>{{ remaining | money }}</strong> more to unlock FREE Shipping!</p>
+        {% assign progress_pct = cart_total | times: 100 | divided_by: threshold_cents %}
+        <div class="progress-bar-track"><div class="progress-bar-fill" style="width: {{ progress_pct }}%;"></div></div>
+      {% endif %}
+    </div>
+
+    <!-- Cart Line Items -->
+    <div class="cart-drawer-items">
+      {% if cart.item_count == 0 %}
+        <div class="cart-empty-msg">Your cart is currently empty.</div>
+      {% else %}
+        {% for item in cart.items %}
+          <div class="cart-item" data-key="{{ item.key }}">
+            <img src="{{ item.image | image_url: width: 140 }}" alt="{{ item.title | escape }}" width="70" height="70" loading="lazy">
+            <div class="cart-item-details">
+              <h4>{{ item.product.title }}</h4>
+              <span class="cart-item-price">{{ item.final_price | money }}</span>
+              <div class="cart-item-qty">
+                <button type="button" class="qty-btn minus" data-key="{{ item.key }}" data-qty="{{ item.quantity | minus: 1 }}">-</button>
+                <span>{{ item.quantity }}</span>
+                <button type="button" class="qty-btn plus" data-key="{{ item.key }}" data-qty="{{ item.quantity | plus: 1 }}">+</button>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+
+    <!-- Drawer Footer Checkout -->
+    {% if cart.item_count > 0 %}
+      <div class="cart-drawer-footer">
+        <div class="cart-subtotal-row">
+          <span>Subtotal:</span>
+          <strong>{{ cart.total_price | money }}</strong>
+        </div>
+        <form action="{{ routes.cart_url }}" method="post">
+          <button type="submit" name="checkout" class="checkout-btn">PROCEED TO CHECKOUT ➔</button>
+        </form>
+      </div>
+    {% endif %}
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "AJAX Cart Drawer Engine",
+  "settings": [
+    {
+      "type": "number",
+      "id": "free_shipping_threshold",
+      "label": "Free Shipping Threshold ($)",
+      "default": 100
+    }
+  ]
+}
+{% endschema %}

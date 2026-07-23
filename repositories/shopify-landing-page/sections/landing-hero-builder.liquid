@@ -1,0 +1,100 @@
+{% comment %}
+  Section: High-Converting Landing Page Hero Builder
+  Author: Sayanthan S. (Shopify Partner)
+{% endcomment %}
+
+{{ 'landing.css' | asset_url | stylesheet_tag }}
+
+<section class="landing-hero" style="background-color: {{ section.settings.bg_color }};">
+  <div class="landing-hero-container">
+    
+    <!-- Left Column: Visual Media -->
+    <div class="landing-hero-media">
+      {% if section.settings.hero_image %}
+        <img src="{{ section.settings.hero_image | image_url: width: 800 }}" alt="{{ section.settings.heading | escape }}" loading="eager" width="600" height="600">
+      {% else %}
+        <div class="landing-hero-placeholder">
+          <span>{{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}</span>
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- Right Column: High-Converting Offer Copy -->
+    <div class="landing-hero-content">
+      {% if section.settings.subheading != blank %}
+        <span class="landing-hero-badge">{{ section.settings.subheading }}</span>
+      {% endif %}
+
+      <h1 class="landing-hero-title">{{ section.settings.heading }}</h1>
+      <p class="landing-hero-desc">{{ section.settings.description }}</p>
+
+      <!-- Trust Features List -->
+      <ul class="landing-hero-features">
+        <li>✓ Free Express Worldwide Shipping</li>
+        <li>✓ 30-Day Money Back Guarantee</li>
+        <li>✓ Over 10,000+ Happy Customers</li>
+      </ul>
+
+      <!-- CTA Action Button -->
+      <div class="landing-hero-actions">
+        <a href="{{ section.settings.cta_link | default: '/collections/all' }}" class="landing-hero-btn">
+          {{ section.settings.cta_text | default: 'CLAIM OFFER NOW' }}
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Landing Page Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Transform Your Daily Experience"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading Tag",
+      "default": "🔥 LIMITED TIME OFFER - 40% OFF"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description Copy",
+      "default": "Premium crafted quality engineered for durability and style."
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Button Label",
+      "default": "GET YOURS TODAY"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#f8fafc"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Landing Page Hero"
+    }
+  ]
+}
+{% endschema %}

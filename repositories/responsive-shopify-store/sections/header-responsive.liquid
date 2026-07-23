@@ -1,0 +1,67 @@
+{% comment %}
+  Section: Responsive Header with Mobile Navigation Drawer
+  Author: Sayanthan S. (Shopify Partner)
+{% endcomment %}
+
+{{ 'responsive-grid.css' | asset_url | stylesheet_tag }}
+
+<header class="site-header">
+  <div class="site-header-container">
+    
+    <!-- Mobile Hamburger Toggle -->
+    <button type="button" class="mobile-nav-toggle" aria-label="Toggle Navigation">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+
+    <!-- Brand Logo -->
+    <div class="site-logo">
+      <a href="{{ routes.root_url }}" class="logo-link">
+        {% if section.settings.logo %}
+          <img src="{{ section.settings.logo | image_url: width: 300 }}" alt="{{ shop.name }}" width="150" height="40">
+        {% else %}
+          <span class="logo-text">{{ shop.name }}</span>
+        {% endif %}
+      </a>
+    </div>
+
+    <!-- Desktop Menu Links -->
+    <nav class="desktop-nav">
+      <ul class="nav-list">
+        {% for link in linklists[section.settings.menu].links %}
+          <li class="nav-item">
+            <a href="{{ link.url }}" class="nav-link {% if link.active %}is-active{% endif %}">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <!-- Header Actions (Search & Cart) -->
+    <div class="header-actions">
+      <a href="{{ routes.cart_url }}" class="cart-icon-btn">
+        🛒 <span class="cart-count">{{ cart.item_count }}</span>
+      </a>
+    </div>
+
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Responsive Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Store Logo"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Main Navigation Menu",
+      "default": "main-menu"
+    }
+  ]
+}
+{% endschema %}

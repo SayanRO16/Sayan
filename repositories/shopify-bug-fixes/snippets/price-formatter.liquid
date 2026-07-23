@@ -1,0 +1,18 @@
+{% comment %}
+  Snippet: Safe Price Formatter with Fallback
+  Usage: {% render 'price-formatter', price: product.price, show_currency: true %}
+  Author: Sayanthan S.
+{% endcomment %}
+
+{% assign formatted_price = price | default: 0 %}
+
+<span class="price-item price-item--sale" data-price-cents="{{ formatted_price }}">
+  {% if formatted_price == 0 %}
+    <span class="price-free">Free</span>
+  {% else %}
+    <span class="price-money">{{ formatted_price | money }}</span>
+    {% if show_currency %}
+      <span class="price-currency-code">{{ cart.currency.iso_code }}</span>
+    {% endif %}
+  {% endif %}
+</span>

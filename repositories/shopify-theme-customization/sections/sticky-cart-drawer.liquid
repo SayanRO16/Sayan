@@ -1,0 +1,70 @@
+{% comment %}
+  Section: Sticky Add-to-Cart Drawer Bar
+  Author: Sayanthan S. (Shopify Partner)
+  Repo: shopify-theme-customization
+{% endcomment %}
+
+{{ 'sticky-cart.css' | asset_url | stylesheet_tag }}
+
+{% if product.available %}
+  <div id="StickyCartBar-{{ section.id }}" class="sticky-cart-bar" data-section-id="{{ section.id }}">
+    <div class="sticky-cart-container">
+      <!-- Product Details -->
+      <div class="sticky-cart-info">
+        {% if product.featured_image %}
+          <img class="sticky-cart-img" src="{{ product.featured_image | image_url: width: 120 }}" alt="{{ product.title | escape }}" loading="lazy" width="60" height="60">
+        {% endif %}
+        <div class="sticky-cart-meta">
+          <h4 class="sticky-cart-title">{{ product.title }}</h4>
+          <span class="sticky-cart-price" id="StickyPrice-{{ section.id }}">{{ product.selected_or_first_available_variant.price | money }}</span>
+        </div>
+      </div>
+
+      <!-- Variant Selector & Action Form -->
+      <div class="sticky-cart-actions">
+        {% if product.variants.size > 1 %}
+          <select id="StickyVariantSelect-{{ section.id }}" class="sticky-cart-select">
+            {% for variant in product.variants %}
+              <option value="{{ variant.id }}" {% if variant == product.selected_or_first_available_variant %}selected{% endif %} {% unless variant.available %}disabled{% endunless %}>
+                {{ variant.title }} - {{ variant.price | money }}
+              </option>
+            {% endfor %}
+          </select>
+        {% else %}
+          <input type="hidden" id="StickyVariantSelect-{{ section.id }}" value="{{ product.selected_or_first_available_variant.id }}">
+        {% endif %}
+
+        <button type="button" id="StickyAddToCartBtn-{{ section.id }}" class="sticky-cart-btn button button--primary">
+          <span>{{ section.settings.button_text | default: 'Add to Cart' }}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+<script src="{{ 'sticky-cart.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "Sticky Add to Cart Bar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Label",
+      "default": "Add to Cart"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sticky Add to Cart Bar"
+    }
+  ]
+}
+{% endschema %}

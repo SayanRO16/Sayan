@@ -1,0 +1,17 @@
+{% comment %}
+  Snippet: Inventory Stock Scarcity Bar
+  Author: Sayanthan S.
+{% endcomment %}
+
+{% assign qty = variant.inventory_quantity | default: 5 %}
+{% assign max = max_stock | default: 20 %}
+{% assign fill_percent = qty | times: 100 | divided_by: max %}
+
+<div class="stock-progress-container" style="margin: 12px 0;">
+  <p class="stock-label" style="font-size:13px; font-weight:700; color:#d97706; margin-bottom:4px;">
+    🔥 Hurry! Only {{ qty }} units left in stock!
+  </p>
+  <div class="progress-track" style="width:100%; height:8px; background:#e2e8f0; border-radius:4px; overflow:hidden;">
+    <div class="progress-fill" style="width: {{ fill_percent }}%; height:100%; background:#f59e0b; transition:width 0.3s ease;"></div>
+  </div>
+</div>

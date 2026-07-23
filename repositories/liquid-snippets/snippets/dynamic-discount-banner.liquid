@@ -1,0 +1,13 @@
+{% comment %}
+  Snippet: Dynamic Savings Percentage Badge
+  Author: Sayanthan S.
+{% endcomment %}
+
+{% if product.compare_at_price > product.price %}
+  {% assign savings_cents = product.compare_at_price | minus: product.price %}
+  {% assign percentage_savings = savings_cents | times: 100 | divided_by: product.compare_at_price | round %}
+  
+  <span class="badge badge--sale" style="background:#ef4444; color:#fff; padding:4px 8px; border-radius:4px; font-weight:700; font-size:12px;">
+    SAVE {{ percentage_savings }}% ({{ savings_cents | money }})
+  </span>
+{% endif %}

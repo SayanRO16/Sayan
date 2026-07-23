@@ -1,0 +1,93 @@
+{% comment %}
+  Section: Shoppable Video Slider
+  Author: Sayanthan S. (Shopify Partner)
+{% endcomment %}
+
+{{ 'shoppable-video.css' | asset_url | stylesheet_tag }}
+
+<div class="shoppable-video-section" style="background: {{ section.settings.bg_color }};">
+  <div class="shoppable-video-header">
+    <h2>{{ section.settings.title }}</h2>
+    <p>{{ section.settings.subtitle }}</p>
+  </div>
+
+  <div class="shoppable-video-grid">
+    {% for block in section.blocks %}
+      {% assign card_product = block.settings.product %}
+      <div class="shoppable-video-card" {{ block.shopify_attributes }}>
+        <div class="video-wrapper">
+          {% if block.settings.video_url != blank %}
+            <video src="{{ block.settings.video_url }}" playsinline loop muted autoplay></video>
+          {% else %}
+            <div class="video-placeholder">▶ Video Preview</div>
+          {% endif %}
+        </div>
+
+        {% if card_product != blank %}
+          <div class="shoppable-product-overlay">
+            <img src="{{ card_product.featured_image | image_url: width: 80 }}" alt="{{ card_product.title }}" width="40" height="40">
+            <div class="shoppable-product-info">
+              <span class="shoppable-title">{{ card_product.title | truncate: 20 }}</span>
+              <span class="shoppable-price">{{ card_product.price | money }}</span>
+            </div>
+            <a href="{{ card_product.url }}" class="shoppable-buy-btn">View</a>
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Shoppable Video Slider",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Shop Our Trending Videos"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Tap to shop products directly from short videos"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background",
+      "default": "#0f172a"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video_card",
+      "name": "Video Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "video_url",
+          "label": "Video MP4 URL"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Tagged Product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shoppable Video Slider",
+      "blocks": [
+        { "type": "video_card" },
+        { "type": "video_card" }
+      ]
+    }
+  ]
+}
+{% endschema %}

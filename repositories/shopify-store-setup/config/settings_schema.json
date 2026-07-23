@@ -1,0 +1,43 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Sayanthan Store Architecture",
+    "theme_version": "1.0.0",
+    "theme_author": "Sayanthan S.",
+    "theme_documentation_url": "https://github.com/SayanRO16"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_primary",
+        "label": "Primary Brand Color",
+        "default": "#95bf47"
+      },
+      {
+        "type": "color",
+        "id": "color_body_bg",
+        "label": "Body Background Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Primary Text Color",
+        "default": "#0f172a"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "font_picker",
+        "id": "type_body_font",
+        "label": "Body Font",
+        "default": "sans-serif"
+      }
+    ]
+  }
+]
