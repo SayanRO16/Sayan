@@ -1,0 +1,62 @@
+{% comment %}
+  Custom Ajax Cart Drawer Snippet
+  Shopify OS 2.0 Compatible
+  Author: Shopify Partner & Developer
+{% endcomment %}
+
+<div id="CustomCartDrawer" class="cart-drawer-overlay" class="is-hidden" aria-hidden="true">
+  <div class="cart-drawer-container">
+    
+    <!-- Cart Header -->
+    <div class="cart-drawer-header">
+      <h3>Your Cart (<span data-cart-count>{{ cart.item_count }}</span>)</h3>
+      <button type="button" class="cart-drawer-close" onclick="closeCartDrawer()" aria-label="Close Cart">&times;</button>
+    </div>
+
+    <!-- Free Shipping Bar -->
+    {% assign free_shipping_goal = 10000 %} {% comment %} $100.00 in cents {% endcomment %}
+    <div class="cart-shipping-bar-wrapper">
+      {% assign remaining = free_shipping_goal | minus: cart.total_price %}
+      {% if remaining > 0 %}
+        <p>You are only <strong>{{ remaining | money }}</strong> away from FREE Shipping!</p>
+        <div class="progress-track"><div class="progress-fill" style="width: {{ cart.total_price | times: 100 | divided_by: free_shipping_goal }}%;"></div></div>
+      {% else %}
+        <p class="free-unlocked">🎉 You unlocked <strong>FREE Shipping!</strong></p>
+      {% endif %}
+    </div>
+
+    <!-- Cart Items List -->
+    <div class="cart-drawer-items" data-cart-items-wrapper>
+      {% for item in cart.items %}
+        <div class="cart-item-row" data-line-item-id="{{ item.key }}">
+          <img src="{{ item.image | image_url: width: 120 }}" alt="{{ item.title | escape }}" width="60" height="60" loading="lazy" />
+          <div class="cart-item-details">
+            <a href="{{ item.url }}" class="cart-item-title">{{ item.product.title }}</a>
+            {% unless item.variant.title contains 'Default' %}
+              <span class="cart-item-variant">{{ item.variant.title }}</span>
+            {% endunless %}
+            <div class="cart-item-price-qty">
+              <span class="cart-price">{{ item.final_line_price | money }}</span>
+              <div class="qty-selector">
+                <button type="button" onclick="updateCartItem('{{ item.key }}', {{ item.quantity | minus: 1 }})">-</button>
+                <span>{{ item.quantity }}</span>
+                <button type="button" onclick="updateCartItem('{{ item.key }}', {{ item.quantity | plus: 1 }})">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Cart Footer & Checkout -->
+    <div class="cart-drawer-footer">
+      <div class="cart-subtotal-row">
+        <span>Subtotal</span>
+        <strong data-cart-subtotal>{{ cart.total_price | money }}</strong>
+      </div>
+      <p class="tax-shipping-note">Taxes and shipping calculated at checkout.</p>
+      <a href="/checkout" class="button-checkout-primary">Proceed to Checkout →</a>
+    </div>
+
+  </div>
+</div>
