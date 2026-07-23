@@ -1,4 +1,4 @@
-# 🚀 Upwork & GitHub Profile Optimization Guide (SAYANTHAN)
+# 🚀 Upwork & GitHub Profile Optimization Guide (SAYANTHAN / SayanRO16)
 
 Unga GitHub profile-a professional-a design panni, Upwork Clients visual-a impressed aaguradhukkaga intha setup guide-a follow pannunga.
 
@@ -18,23 +18,16 @@ Ungalukku `c:\Users\User\Downloads\sayan github` folder-la key files update pann
 ## 🛠️ Step-by-Step Setup Guide
 
 ### STEP 1: GitHub Special Repository Create Pannunga
-1. Open [GitHub.com](https://github.com) & Log in (Account: `sayan`).
-2. Click **+** (top right) ➔ **New Repository**.
-3. Repository name-la **`sayan`** podunga.
-   * 💡 GitHub *“✨ You found a secret! sayan/sayan is a special repository...”* nu oru box kaattum.
-4. Set repository visibility to **Public**.
-5. Check **Add a README file** box (or leave empty if uploading files directly).
-6. Click **Create repository**.
+1. Open [GitHub.com](https://github.com) & Log in (Account: `SayanRO16`).
+2. Repository name: **`Sayan`** (or `SayanRO16` if your username is `SayanRO16`).
+3. Set repository visibility to **Public**.
+4. Click **Create repository**.
 
 ---
 
 ### STEP 2: Upload Files to GitHub
-1. `README.md` file already **SAYANTHAN**, **sayan**, **https://www.upwork.com/freelancers/~01142b0eff160cf26a?mp_source=share**, and **info@Xloxi.com** kku update aagi irukku.
-2. GitHub-la `sayan/sayan` repository open panni, `assets/` folder & `README.md` upload pannunga:
-   - `assets/banner.svg`
-   - `assets/shopify-partner-badge.svg`
-   - `README.md`
-3. **Commit changes** click pannunga. Unga GitHub profile main page-la 💥 WOW visual README live aayidum!
+1. `README.md` file already **SAYANTHAN**, **SayanRO16**, **https://www.upwork.com/freelancers/~01142b0eff160cf26a?mp_source=share**, and **info@Xloxi.com** kku update aagi irukku.
+2. GitHub-la `SayanRO16/Sayan` repository-kku git push executed!
 
 ---
 
@@ -51,21 +44,16 @@ Ungalukku `c:\Users\User\Downloads\sayan github` folder-la key files update pann
 ### STEP 4: Upwork Proposals-la GitHub Link Share Pannumbodhu Client Impact
 Upwork Proposal anuppum bodhu, intha line append pannunga:
 
-> *"You can review my clean Shopify Liquid / App code, theme architecture, and past client projects on my verified GitHub profile here: https://github.com/sayan"*
-
-### 🎯 Client Reaction:
-1. Client link-a click pannumbodhu, **Shopify Partner Badge + High-Tech Banner** first impression-ah pakkuvaanga.
-2. Clean code structure + Tech stack badges pathu unga technical expertise-a straight-a trust pannuvaanga.
-3. High-budget clients ($1,000 - $5,000+ jobs) instant-a respond pannuvaanga.
+> *"You can review my clean Shopify Liquid / App code, theme architecture, and past client projects on my verified GitHub profile here: https://github.com/SayanRO16"*
 
 ---
 
 ## 📌 GitHub Sample Repositories to Push:
 Upload these 5 projects from `sample_repos/` folder to your GitHub:
-- `sayan/shopify-liquid-snippets-pack`
-- `sayan/shopify-custom-theme-sections`
-- `sayan/shopify-inventory-sync-app`
-- `sayan/headless-shopify-nextjs-store`
-- `sayan/js-ecommerce-cart-drawer`
+- `SayanRO16/shopify-liquid-snippets-pack`
+- `SayanRO16/shopify-custom-theme-sections`
+- `SayanRO16/shopify-inventory-sync-app`
+- `SayanRO16/headless-shopify-nextjs-store`
+- `SayanRO16/js-ecommerce-cart-drawer`
 
 Good luck closing high-paying Upwork clients! 🚀

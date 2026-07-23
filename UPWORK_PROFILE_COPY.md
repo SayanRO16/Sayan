@@ -27,12 +27,12 @@ I specialize in building high-converting Shopify themes, custom Liquid sections,
 
 🏆 WHY CLIENTS CHOOSE ME:
 ✔ Certified Shopify Partner with 100% focus on client ROI
-✔ Clean, documented code accessible on GitHub: https://github.com/sayan
+✔ Clean, documented code accessible on GitHub: https://github.com/SayanRO16
 ✔ Daily async video/chat updates & responsive communication
 ✔ 100% On-Time delivery & post-launch support
 
 📁 Explore my verified open-source Shopify code samples and repositories:
-https://github.com/sayan
+https://github.com/SayanRO16
 
 Ready to elevate your Shopify store's performance and conversion rate? Let's discuss your project!
 ```
@@ -55,7 +55,7 @@ Here is how I will approach your project:
 
 💡 VERIFIED CODE & PORTFOLIO:
 You can inspect my clean code samples, custom Liquid snippets, and past Shopify theme work directly on my GitHub profile:
-👉 https://github.com/sayan
+👉 https://github.com/SayanRO16
 
 I am available to start immediately. Let's hop on a quick chat or call to discuss the project details!
 

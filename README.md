@@ -2,6 +2,7 @@
   ========================================================================
   PROFESSIONAL GITHUB PROFILE README FOR UPWORK CLIENTS
   Developer: SAYANTHAN (Shopify & Full-Stack Specialist)
+  GitHub: SayanRO16
   ========================================================================
 -->
 
@@ -81,29 +82,19 @@ Here are some selected projects showcasing custom theme architecture and app dev
 
 | Project | Type | Key Technologies | Outcome / Business Impact |
 | :--- | :--- | :--- | :--- |
-| **[Shopify Liquid Snippets Pack](https://github.com/sayan/shopify-liquid-snippets-pack)** | Code Snippets | Shopify Liquid, JS ES6, CSS3 | 🚀 **+38% Conversion Rate** & Ajax Cart Drawer integration. |
-| **[Shopify Custom Theme Sections](https://github.com/sayan/shopify-custom-theme-sections)** | OS 2.0 Sections | Liquid, JSON Schema, Tailwind | 🎨 Custom Shoppable Video Sliders & Product Upsell Grids. |
-| **[Shopify Multi-Warehouse Sync App](https://github.com/sayan/shopify-inventory-sync-app)** | Private App | Node.js, Remix, GraphQL, Webhooks | 🔄 Real-time multi-location inventory synchronization. |
-| **[Headless Next.js Storefront](https://github.com/sayan/headless-shopify-nextjs-store)** | Headless E-Commerce | Next.js 14, Storefront API, Vercel | ⚡ Sub-second page rendering with 100/100 Lighthouse score. |
-| **[Vanilla JS Cart Engine](https://github.com/sayan/js-ecommerce-cart-drawer)** | Frontend Module | Vanilla JS, ARIA, CSS Flex | 💰 Lightweight (3.2KB) accessible shopping cart drawer. |
-
----
-
-### 🛠️ **Upwork Services I Provide**
-
-1. **Full Store Builds & Migration:** Migrating WooCommerce/Magento/Wix to Shopify Online Store 2.0.
-2. **Shopify Theme Customization:** Adding custom JSON sections, mega menus, product builders, sticky add-to-carts.
-3. **Speed & Core Web Vitals Optimization:** Fixing heavy apps, unminified Liquid scripts, lazy-loading assets.
-4. **Private & Public Shopify Apps:** Building custom admin tools, webhook receivers, and custom pricing engines.
-5. **Headless Shopify (Next.js / Hydrogen):** High-end custom storefronts for enterprise brands.
+| **[Shopify Liquid Snippets Pack](https://github.com/SayanRO16/shopify-liquid-snippets-pack)** | Code Snippets | Shopify Liquid, JS ES6, CSS3 | 🚀 **+38% Conversion Rate** & Ajax Cart Drawer integration. |
+| **[Shopify Custom Theme Sections](https://github.com/SayanRO16/shopify-custom-theme-sections)** | OS 2.0 Sections | Liquid, JSON Schema, Tailwind | 🎨 Custom Shoppable Video Sliders & Product Upsell Grids. |
+| **[Shopify Multi-Warehouse Sync App](https://github.com/SayanRO16/shopify-inventory-sync-app)** | Private App | Node.js, Remix, GraphQL, Webhooks | 🔄 Real-time multi-location inventory synchronization. |
+| **[Headless Next.js Storefront](https://github.com/SayanRO16/headless-shopify-nextjs-store)** | Headless E-Commerce | Next.js 14, Storefront API, Vercel | ⚡ Sub-second page rendering with 100/100 Lighthouse score. |
+| **[Vanilla JS Cart Engine](https://github.com/SayanRO16/js-ecommerce-cart-drawer)** | Frontend Module | Vanilla JS, ARIA, CSS Flex | 💰 Lightweight (3.2KB) accessible shopping cart drawer. |
 
 ---
 
 ### 📊 **GitHub Activity & Code Quality**
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sayan&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sayan&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=SayanRO16&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SayanRO16&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" />
 </div>
 
 <br/>
