@@ -132,22 +132,29 @@ I specialize in **Shopify Online Store 2.0 (OS 2.0)** theme development from scr
 ## 📊 GitHub Stats & Contribution Analytics
 
 <div align="center">
+  <a href="https://github.com/SayanRO16">
+    <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=SayanRO16&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Sayanthan's GitHub Stats" height="165" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/SayanRO16">
+    <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=SayanRO16&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="165" />
+  </a>
+</div>
 
-  <table border="0">
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=SayanRO16&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Sayanthan's GitHub Stats" width="410" />
-      </td>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SayanRO16&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="370" />
-      </td>
-    </tr>
-  </table>
+<br/>
 
-  <br/>
+<div align="center">
+  <a href="https://github.com/SayanRO16">
+    <img src="https://streak-stats.demolab.com/?user=SayanRO16&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" width="85%" />
+  </a>
+</div>
 
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=SayanRO16&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" width="800" />
+<br/>
 
+<div align="center">
+  <a href="https://github.com/SayanRO16">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=SayanRO16&theme=tokyonight&hide_border=true" alt="GitHub Activity Graph" width="85%" />
+  </a>
 </div>
 
 ---
