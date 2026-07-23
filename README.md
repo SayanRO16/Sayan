@@ -12,7 +12,7 @@ GitHub: SayanRO16
 
   <!-- Header Banner -->
   <a href="https://www.upwork.com/freelancers/~01142b0eff160cf26a?mp_source=share">
-    <img src="assets/banner.svg" alt="SAYANTHAN S. - Certified Shopify Partner & Senior Developer Banner" width="100%" />
+    <img src="assets/banner.svg?v=3" alt="SAYANTHAN S. - Certified Shopify Partner & Senior Developer Banner" width="100%" />
   </a>
 
   <br/><br/>

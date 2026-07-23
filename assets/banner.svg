@@ -38,15 +38,15 @@
 
   <!-- Left Side Text Content -->
   
-  <!-- Top Tag Line (Certified Shopify Partner) with expanded pill & vector icon -->
+  <!-- Top Tag Line (Certified Shopify Partner) - Large width buffer (330px) -->
   <g transform="translate(70, 52)">
-    <rect x="0" y="0" width="295" height="34" rx="17" fill="#95BF47" fill-opacity="0.15" stroke="#95BF47" stroke-width="1.5"/>
+    <rect x="0" y="0" width="330" height="34" rx="17" fill="#95BF47" fill-opacity="0.15" stroke="#95BF47" stroke-width="1.5"/>
     
     <!-- Vector Checkmark Badge Icon -->
     <circle cx="20" cy="17" r="8" fill="#95BF47" />
     <path d="M16 17L19 20L24 14" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     
-    <text x="36" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#95BF47" letter-spacing="0.8">
+    <text x="36" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#95BF47" letter-spacing="0.5">
       CERTIFIED SHOPIFY PARTNER
     </text>
   </g>
